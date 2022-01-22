@@ -143,13 +143,13 @@ html {
 }
 
 .conteudo-principal .paineis .projeto1 {
-  background-image: url('painel1.png');
+  background-image: url('./assets/painel1.png');
 }
 .conteudo-principal .paineis .projeto2 {
-  background-image: url('media-kit.jpg');
+  background-image: url('./assets/media-kit.jpg');
 }
 .conteudo-principal .paineis .projeto3 {
-  background-image: url('media.jpg');
+  background-image: url('./assets/media.jpg');
 }
 
 .conteudo-principal .paineis .imagem-painel.mostrar {
@@ -163,7 +163,7 @@ html {
 }
 
 .conteudo-principal .paineis .seta {
-  background-image: url('seta.png');
+  background-image: url('./assets/seta.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -198,6 +198,8 @@ html {
     #f2f2f2,
     #ada996
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 290px;
+  width: 100%;
 }
 
 .quem-somos .conteudo {
@@ -212,12 +214,12 @@ html {
 
 .quem-somos .conteudo .imagem {
   width: 8%;
+  border-left: 400px;
 }
 
 .quem-somos .conteudo .informacoes .titulo {
   font-size: 50px;
   color: #140b61;
-  margin-bottom: 20px;
 }
 
 .quem-somos .conteudo .informacoes .texto {
@@ -239,39 +241,35 @@ html {
   }
 
   .quem-somos .conteudo .informacoes {
-    width: 100%;
+    width: 50%;
   }
 }
-
 .clientes .lista {
   display: flex;
-  align-items: center;
-  padding: 0 10%;
-  background: #ada996; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.clientes .lista .titulo {
-  font-size: 40px;
-  color: #140b61;
-  margin-bottom: 10px;
   justify-content: center;
+  align-items: center;
+  height: 350px;
+  position: relative;
 }
-.clientes .lista .imagem {
-  width: 8%;
+
+.clientes .lista .titulo {
+  font-size: 45px;
+  color: #140b61;
+  padding: 200px;
+  height: 200px;
 }
+.clientes .lista .logos {
+  display: flex;
+  height: 100px;
+  width: 550px;
+}
+.clientes .lista .logos > img {
+  height: 90px;
+  width: 110px;
+  margin-right: 25px;
+  display: inline-flex;
+}
+
 @media (max-width: 1200px) {
   .clientes .lista {
     flex-direction: column;

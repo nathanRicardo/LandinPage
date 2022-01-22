@@ -15,7 +15,6 @@ function mostrarImagem() {
 setaAvancar.addEventListener('click', function () {
   const totalDeImagens = imagensPainel.length - 1;
   if (imagemAtual === totalDeImagens) {
-    console.log('não pode avançar mais');
     return;
   }
 
@@ -28,7 +27,6 @@ setaAvancar.addEventListener('click', function () {
 
 setaVoltar.addEventListener('click', function () {
   if (imagemAtual === 0) {
-    console.log('não tem mais como voltar');
     return;
   }
 
