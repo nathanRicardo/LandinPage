@@ -210,11 +210,14 @@ html {
 
 .quem-somos .conteudo .informacoes {
   width: 40%;
+  margin-left: 145px;
+  margin-top: 20px;
 }
 
 .quem-somos .conteudo .imagem {
   width: 8%;
-  border-left: 400px;
+
+  margin-left: 150px;
 }
 
 .quem-somos .conteudo .informacoes .titulo {
@@ -255,8 +258,9 @@ html {
 .clientes .lista .titulo {
   font-size: 45px;
   color: #140b61;
-  padding: 200px;
-  height: 200px;
+  padding: 100px;
+
+  justify-content: flex-start;
 }
 .clientes .lista .logos {
   display: flex;
